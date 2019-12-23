@@ -7,31 +7,25 @@
 }
 
 .card:hover {
-  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  box-shadow: 0 8px 16px 0 rgba(90, 86, 86, 0.2);
 }
 
 .container {
-  display: flex;
-  justify-content: space-between;
-}
-@media screen and (max-width: 700px){
-  .container{
-    flex-wrap: wrap;
-  }
-  .col-3 {
-    width: 100% !important;
-  }
-  .col-7 {
-    width: 100% !important;
-  }
-  
-  
+	display: flex;
+  min-height: 100%;
+  max-width: 100%;
 }
 .col-3 {
   width: 33%;
 }
 .col-7 {
   width: 66%;
+}
+.col {
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+  padding: 0 15px;
 }
 
 .paragraf-item {
@@ -70,14 +64,27 @@
 .ml-2 {
   margin-left: 1.5rem;
 }
+.mt-0 {
+  margin-top: 0rem;
+}
+.mt-1 {
+  margin-top: 1.25rem;
+}
+.mt-2 {
+  margin-top: 1.5rem;
+}
+.m-auto {
+  margin: 0 auto;
+}
 .pl-icon-1 {
   padding-right: 0.75rem;
 }
 .text-color-gray {
   color: #757575;
 }
-.flex-column {
+.column {
   flex-direction: column;
+  width: 100%;
 }
 .p-container {
   padding: 0.01rem 16px;
@@ -108,4 +115,90 @@
 }
 .p-2 {
   padding: 1.5rem;
+}
+.text-center{
+  text-align: center;
+}
+.row{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+}
+
+/* Media Query */
+
+@media screen and (max-width: 700px){
+  .container{
+    flex-wrap: wrap;
+  }
+  .col-3 {
+    width: 100% !important;
+  }
+  .col-7 {
+    width: 100% !important;
+  }
+  
+}
+.space-between{
+  justify-content: space-between;
+}
+.space-around{
+  justify-content: space-around;
+}
+.container-box{
+  padding: 15px;
+}
+.control-label{
+  position: relative;
+  font-size: 0.7rem;
+  color: #4eb577;
+  font-weight: 600;
+  text-transform: uppercase;
+  top: 0.41rem;
+  left: 8px;
+  background-color: #fff;
+  padding: 0 5px;
+}
+
+
+.item--menu li {
+	padding: 10px;
+	list-style: none;
+	width: 0%;
+}
+.item--menu li a {
+	color: #fff;
+	background-color: #212121;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 900;
+	display: block;
+	text-decoration: none;
+	margin: 0 100%;
+}
+.side--bar {
+	width: 200px;
+	background-color: #009688;
+}
+.flex-end{
+  align-items: flex-end;
+}
+.flex{
+  display: flex;
+}
+.btn{
+  padding: 0.625rem 1.8rem;
+  margin-left: 0.4rem;
+  border-radius: 1.8rem;
+  letter-spacing: 3px;
+  border: none;
+  font-weight: 400;
+  font-size: 1.2em;
+}
+.btn-pale {
+  background-color: silver;
+}
+.btn-primary {
+  background-color: #4eb577;
+  color: #fff;;
 }
