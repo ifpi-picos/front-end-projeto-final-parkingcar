@@ -1,0 +1,111 @@
+.card {
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 16px;
+  height: auto;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (max-width: 700px){
+  .container{
+    flex-wrap: wrap;
+  }
+  .col-3 {
+    width: 100% !important;
+  }
+  .col-7 {
+    width: 100% !important;
+  }
+  
+  
+}
+.col-3 {
+  width: 33%;
+}
+.col-7 {
+  width: 66%;
+}
+
+.paragraf-item {
+  padding-left: 1.25rem;
+}
+.title-img-avatar {
+  position: absolute;
+  align-self: flex-end;
+  margin-left: 16px;
+  margin-top: -13px;
+}
+.main-color {
+  color: #009688;
+}
+.color-black{
+  color: black;
+}
+.pt-0 {
+  padding-top: 0 !important;
+}
+.pr-0 {
+  padding-right: 0 !important;
+}
+.tag-main {
+  color: white;
+  background-color: #009688;
+  border-radius: 4px;
+  padding: 5px;
+}
+.ml-0 {
+  margin-left: 0rem;
+}
+.ml-1 {
+  margin-left: 1.25rem;
+}
+.ml-2 {
+  margin-left: 1.5rem;
+}
+.pl-icon-1 {
+  padding-right: 0.75rem;
+}
+.text-color-gray {
+  color: #757575;
+}
+.flex-column {
+  flex-direction: column;
+}
+.p-container {
+  padding: 0.01rem 16px;
+}
+.progress-body {
+  height: 18px;
+  border: #009688 1px solid;
+  margin: 5px 0;
+}
+.progress-bar {
+  background-color: #009688;
+  height: 100%;
+  text-align: center;
+  color: white;
+  font-size: 80%;
+}
+
+.progress-bar,
+.progress-body {
+  border-radius: 11px;
+}
+
+.height-24px {
+  height: 24px;
+}
+.color-white{
+  color: white !important;
+}
+.p-2 {
+  padding: 1.5rem;
+}
