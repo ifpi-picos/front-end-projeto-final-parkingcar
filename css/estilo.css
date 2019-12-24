@@ -41,7 +41,8 @@ button {
 	cursor: pointer;
 }
 input,
-select,textarea {
+select,
+textarea {
 	color: #009688;
 	border: 1px solid #ccc;
 	border-radius: 5px;
@@ -78,11 +79,30 @@ hr {
 
 footer {
 	background-color: #009688;
-	color: white !important;
+	color: white;
 	width: 100%;
 	text-align: center;
 	height: 100%;
 	padding: 0.1rem 0;
+}
+tr th {
+	text-transform: uppercase;
+}
+tr td,
+tr th {
+	border-right: 1px solid #ebeef5;
+	border-top: 1px solid #ebeef5;
+	padding: 0.2rem;
+}
+tr td:nth-child(1),tr th:nth-child(1){
+	border-left: 1px solid #ebeef5;
+}
+tr:nth-last-child(1) td{
+	border-bottom: 1px solid #ebeef5;
+}
+
+table {
+	width: 100%;
 }
 
 ul {
@@ -111,6 +131,7 @@ a {
 }
 .logo a,
 .main-nav a {
+	color: #fff;
 	padding: 10px 15px;
 	text-transform: uppercase;
 	text-align: center;
@@ -118,8 +139,10 @@ a {
 }
 
 .main-nav a {
-	color: #34495e;
 	font-size: 0.99em;
+}
+.main-nav a:hover {
+	color: black;
 }
 
 .main-nav a:hover {
@@ -129,14 +152,15 @@ a {
 .nav-bar {
 	padding-top: 0.5em;
 	padding-bottom: 0.5em;
-	border: 1px solid #a2a2a2;
-	background-color: #f4f4f4;
+	color: #fff;
+	border: 1px solid #009688;
+	background-color: #009688;
 	-webkit-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 	-moz-box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 	box-shadow: 0px 0px 14px 0px rgba(0, 0, 0, 0.75);
 	-webkit-border-radius: 5px;
 	-moz-border-radius: 5px;
-	border-radius: 5px;
+	border-radius: 3px;
 }
 
 @media (min-width: 769px) {
@@ -196,6 +220,9 @@ a {
 	border-radius: 3px;
 }
 
+input:focus{
+	border-radius:1px solid #009688;
+}
 .input {
 	border: 0;
 	color: inherit;
@@ -205,6 +232,7 @@ a {
 	padding: 0;
 	-webkit-transition: background-color 0.3s;
 	transition: background-color 0.3s;
+	border: #009688;
 }
 
 .user:before {
