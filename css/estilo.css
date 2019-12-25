@@ -94,10 +94,11 @@ tr th {
 	border-top: 1px solid #ebeef5;
 	padding: 0.2rem;
 }
-tr td:nth-child(1),tr th:nth-child(1){
+tr td:nth-child(1),
+tr th:nth-child(1) {
 	border-left: 1px solid #ebeef5;
 }
-tr:nth-last-child(1) td{
+tr:nth-last-child(1) td {
 	border-bottom: 1px solid #ebeef5;
 }
 
@@ -125,7 +126,9 @@ a {
 	margin: 0;
 	font-size: 1.45em;
 }
-
+.row h1.m-auto {
+	margin-top: 1.25rem;
+}
 .main-nav {
 	margin-top: 5px;
 }
@@ -215,8 +218,8 @@ a {
 	border-radius: 3px;
 }
 
-input:focus{
-	border-radius:1px solid #009688;
+input:focus {
+	border-radius: 1px solid #009688;
 }
 .input {
 	border: 0;

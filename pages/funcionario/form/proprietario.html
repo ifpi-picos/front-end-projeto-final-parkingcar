@@ -2,7 +2,7 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-		<title>Cadastrar Veiculo</title>
+		<title>Cadastrar Proprietário</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<link
 			rel="stylesheet"
@@ -21,7 +21,7 @@
 		<div class="container">
 			<div class="side--bar">
 				<nav class="item--menu">
-					<li><a href="#">Entrada/Saida</a></li>
+					<li><a href="">Entrada/Saida</a></li>
 					<li><a href="../list/proprietario.html">Proprietario</a></li>
 					<li><a href="../list/veiculo.html">Veiculo</a></li>
 				</nav>
@@ -29,8 +29,8 @@
 			<main>
 				<div class="container">
 					<div class="column">
-						<div class="row">
-							<h1 class="m-auto">Cadastrar Veiculo</h1>
+						<div class="row mt-1">
+							<h1 class="m-auto">Cadastrar Proprietário</h1>
 						</div>
 						<div class="card">
 							<form action="">
@@ -39,30 +39,28 @@
 										<div class="col">
 											<div class="form-group">
 												<div class="input-group">
-													<label for="id-placa" class="control-label"
-														>Placa</label
+													<label for="id-nome" class="control-label"
+														>Nome</label
 													>
-													<input type="text" id="id-placa" />
+													<input type="text" id="id-nome" />
 												</div>
 											</div>
 										</div>
 										<div class="col">
 											<div class="form-group">
 												<div class="input-group">
-													<label for="id-cor" class="control-label">Cor</label>
-													<input type="text" id="id-cor" />
+													<label for="id-cpf" class="control-label">Cpf</label>
+													<input type="text" id="id-cpf" />
 												</div>
 											</div>
 										</div>
 										<div class="col">
 											<div class="form-group">
 												<div class="input-group">
-													<label class="control-label" for="id-tamanho">Tamanho</label>
-													<select class="m-0" name="Tamanho" id="id-tamanho">
-														<option value="1">aaa</option>
-														<option value="1">bbb</option>
-														<option value="1">ccc</option>
-													</select>
+													<label for="id-telefone" class="control-label"
+														>Telefone</label
+													>
+													<input type="text" id="id-telefone" />
 												</div>
 											</div>
 										</div>
@@ -71,20 +69,10 @@
 										<div class="col">
 											<div class="form-group">
 												<div class="input-group">
-													<label for="id-marca" class="control-label">
-														Marca/Modelo
+													<label for="id-endereco" class="control-label">
+														Endereço
 													</label>
-													<input type="text" id="id-marca" />
-												</div>
-											</div>
-										</div>
-										<div class="col">
-											<div class="form-group">
-												<div class="input-group">
-													<label for="id-marca" class="control-label">
-														Proprietário
-													</label>
-													<input type="text" id="id-marca" />
+													<input type="text" id="id-endereco" />
 												</div>
 											</div>
 										</div>
@@ -94,7 +82,7 @@
 											<div class="form-group">
 												<div class="input-group">
 													<label for="id-descricao" class="control-label"
-														>Descrição</label
+														>Observação</label
 													>
 													<textarea type="text" id="id-descricao"></textarea>
 												</div>
