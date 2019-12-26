@@ -408,8 +408,7 @@ input[data-function*='swipe']:checked ~ .side-bar .menu li {
 	padding: 5px 0px 5px 0;
 	margin: 0 20px;
 }
-h1,
-p {
+h1 {
 	margin: 30px 0;
 	font-size: 45px;
 	font-weight: 280;

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>Entrada/Saida</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<link
+			rel="stylesheet"
+			type="text/css"
+			media="screen"
+			href="../../../css/estilo.css"
+		/>
+	</head>
+	<body>
+		<header class="nav-bar">
+			<h1 class="logo"><a href="../../../index.html">Parking Car</a></h1>
+			<ul class="main-nav">
+				<li><a href="../../../index.html">Sair</a></li>
+			</ul>
+		</header>
+		<div class="container">
+			<div class="side--bar">
+				<nav class="item--menu">
+					<li><a href="../form/entrada-saida.html">Entrada/Saida</a></li>
+					<li><a href="../list/proprietario.html">Proprietario</a></li>
+					<li><a href="../list/veiculo.html">Veiculo</a></li>
+				</nav>
+			</div>
+			<main>
+				<div class="container">
+					<div class="column">
+						<div class="row">
+							<h1 class="m-auto">Cadastrar Entrada/Saída</h1>
+						</div>
+						<div class="card">
+							<div>
+								<div class="row">
+									<div class="m-auto">
+										<div class="form-group">
+											<div class="input-group">
+												<label class="control-label" for="id-placa"
+													>Placa</label
+												>
+												<input type="text" id="id-placa" />
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="mt-1">
+									<p class="style-box-p">Dados do Proprietario</p>
+									<div class="row mt-1"></div>
+									<div>
+										<div class="row space-around">
+											<div class="col">
+												<div class="form-group">
+													<div class="input-group">
+														<label for="id-nome" class="control-label"
+															>Nome</label
+														>
+														<input disabled type="text" id="id-nome" value="Matheus Santana"/>
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="form-group">
+													<div class="input-group">
+														<label for="id-cpf" class="control-label">Cpf</label>
+														<input disabled  type="text" id="id-cpf" value="111.111.111-11" />
+													</div>
+												</div>
+											</div>
+											<div class="col">
+												<div class="form-group">
+													<div class="input-group">
+														<label for="id-telefone" class="control-label"
+															>Telefone</label
+														>
+														<input disabled type="text" id="id-telefone" value="(99)9 9999-9999" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row space-around">
+											<div class="col">
+												<div class="form-group">
+													<div class="input-group">
+														<label for="id-endereco" class="control-label">
+															Endereço
+														</label>
+														<input disabled type="text" id="id-endereco" value="Minha casa" />
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row space-around">
+											<div class="col">
+												<div class="form-group">
+													<div class="input-group">
+														<label for="id-descricao" class="control-label"
+															>Observação</label
+														>
+														<textarea disabled type="text" id="id-descricao" >Descrição...................................................................................................................................</textarea>
+													</div>
+												</div>
+											</div>
+										</div>
+										<p class="style-box-p mt-1">Dados do Veiculo</p>
+										<div>
+											<div class="row space-around">
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-placa" class="control-label"
+																>Placa</label
+															>
+															<input disabled type="text" id="id-placa" value="ABC-1234"/>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-cor" class="control-label">Cor</label>
+															<input disabled type="text" id="id-cor" value="Azul" />
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-tamanho" class="control-label">Tamanho</label>
+															<input disabled type="text" id="id-tamanho" value="Medio" />
+														</div>
+													</div>
+												</div>
+											</div>
+											<div class="row space-around">
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-marca" class="control-label">
+																Marca/Modelo
+															</label>
+															<input disabled type="text" id="id-marca" value="Fusca"/>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-marca" class="control-label">
+																Proprietário
+															</label>
+															<input disabled type="text" id="id-marca" value="Comum"/>
+														</div>
+													</div>
+											</div>
+											</div>
+											<div class="row space-around">
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-descricao" class="control-label"
+																>Descrição</label
+															>
+															<textarea disabled type="text" id="id-descricao">Um fusca Normal</textarea>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<p class="style-box-p mt-1">Registrar</p>
+										<div class="row space-around">
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label for="id-descricao" class="control-label"
+															>Data de Hora</label
+															>
+															<input type="datetime-local" id="id-descricao"></input>
+														</div>
+													</div>
+												</div>
+												<div class="col">
+													<div class="form-group">
+														<div class="input-group">
+															<label class="control-label" for="id-tamanho">Entrada/Saida</label>
+															<select class="m-0" name="Tamanho" id="id-tamanho">
+																<option disabled>Selecione uma Opção</option>
+																<option value="1">Entrada</option>
+																<option value="1">Saida</option>
+															</select>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="row mt-1">
+											<div class="m-auto">
+												<button class="btn btn-primary">Confirmar</button>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>
