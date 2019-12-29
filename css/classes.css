@@ -219,12 +219,13 @@
 	background-color: #009688;
 }
 .flex-end {
+	display: flex;
 	align-items: flex-end;
 }
 .center {
 	align-self: center;
 }
-​ .flex {
+​.flex {
 	display: flex;
 }
 .pesquisa {
