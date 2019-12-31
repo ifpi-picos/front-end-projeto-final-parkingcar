@@ -104,6 +104,7 @@ tr:nth-last-child(1) td {
 
 table {
 	width: 100%;
+	overflow: hidden;
 }
 
 ul {
