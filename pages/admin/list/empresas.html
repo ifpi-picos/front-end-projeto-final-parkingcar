@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Empresas</title>
+    <link rel="stylesheet" href="../../../css/estilo.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <h1 class="logo"><a href="../../../index.html">Parking Car</a></h1>
+        <ul class="main-nav">
+            <li><a href="../../../index.html">Sair</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="side--bar">
+            <nav class="item--menu">
+                <li><a href="../dashboard.html">Dashboard</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="responsavel-empresa.html">Responsaveis</a></li>
+            </nav>
+        </div>
+        <main>
+            <div class="container">
+                <div class="column">
+                    <div class="row">
+                        <h1 class="m-auto">Empresas</h1>
+                    </div>
+                    <div class="card ">
+                        <div class="container">
+                            <div class="row space-between">
+                                <div class="">
+                                    <input
+                                        class="pesquisa"
+                                        type="text"
+                                        id="id-pesquisa"
+                                        placeholder="Pesquisa"
+                                    />
+                                </div>
+                                <div>
+                                    <button onclick="location.href = '../form/empresa.html'" class="btn btn-primary">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CNPJ</th>
+                                        <th>Cidade</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Only Stop</td>
+                                        <td>00.000.000/0000-00</td>
+                                        <td>Picos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Jesiel Parking</td>
+                                        <td>11.111.111/1111-11</td>
+                                        <td>Picos</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Smart Parking</td>
+                                        <td>22.222.222/2222-22</td>
+                                        <td>Teresina</td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="../../../js/main.js"></script>
+</body>
+</html>
