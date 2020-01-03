@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsáveis</title>
+    <link rel="stylesheet" href="/css/estilo.css">
+</head>
+<body>
+    <header class="nav-bar">
+        <h1 class="logo"><a href="/pages/admin/dashboard.html">Parking Car</a></h1>
+        <ul class="main-nav">
+            <li><a href="/">Sair</a></li>
+        </ul>
+    </header>
+    <div class="container">
+        <div class="side--bar">
+            <nav class="item--menu">
+                <li><a href="/pages/admin/dashboard.html">Dashboard</a></li>
+                <li><a href="/pages/admin/list/empresas.html">Empresas</a></li>
+                <li><a href="/pages/admin/list/responsavel-empresa.html">Responsáveis</a></li>
+            </nav>
+        </div>
+        <main>
+            <div class="container">
+                <div class="column">
+                    <div class="row">
+                        <h1 class="m-auto">Responsáveis</h1>
+                    </div>
+                    <div class="card ">
+                        <div class="container">
+                            <div class="row space-between">
+                                <div>
+                                    <input
+                                        class="pesquisa"
+                                        type="text"
+                                        id="id-pesquisa"
+                                        placeholder="Pesquisa"
+                                    />
+                                </div>
+                                <div>
+                                    <button onclick="location.href = '/pages/admin/form/responsavel-empresa.html'" class="btn btn-primary">Cadastrar</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="container mt-1">
+                            <table>
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>CPF</th>
+                                        <th>Empresa</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Jesiel</td>
+                                        <td>000.000.000-00</td>
+                                        <td>Jesiel Parking</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Matheus</td>
+                                        <td>111.111.111-11</td>
+                                        <td>Only Stop</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Yuri</td>
+                                        <td>222.222.222-22</td>
+                                        <td>Smart Parking</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+        </main>
+    </div>
+    <script src="/js/main.js"></script>
+</body>
+</html>
