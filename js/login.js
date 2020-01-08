@@ -6,8 +6,10 @@ function changeEndPoint() {
     }
     if (auth.username === 'Admin') {
         location.href = '/pages/admin/dashboard.html'
-    } else {
-
+    } else if (auth.username === 'Gestor') {
+        location.href = '/pages/gestor/dashboard.html'
+    } 
+    else {
         location.href = '/pages/funcionario/form/entrada-saida.html';
     }
 }
