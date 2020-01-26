@@ -49,4 +49,3 @@ const veiculos = gerarTabela(
 	);
 	
 	document.getElementById('table').append(veiculos);
-	
