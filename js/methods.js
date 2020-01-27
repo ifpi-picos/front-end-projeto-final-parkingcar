@@ -25,10 +25,10 @@ function gerarTabela(headers, body, props) {
 }
 
 function getAuth() {
-	return JSON.parse(localStorage.user);
+	return localStorage.user ? JSON.parse(localStorage.user) : {};
 }
 
-function http(url, {body , method = 'GET'} = {}) {
+function http(url, { body, method = 'GET' } = {}) {
 	const token = getAuth() ? getAuth().token : '';
 	const urlBase = 'http://localhost:3000/api';
 	let option = {
@@ -48,11 +48,11 @@ function createObjectWithId(object) {
 	const newObject = {};
 	Object.keys(object).forEach(key => {
 		newObject[key] = document.getElementById(object[key]).value;
-	})
+	});
 	return newObject;
 }
 function clearForm(array) {
-	array.forEach(element =>{
+	array.forEach(element => {
 		document.getElementById(element).value = '';
-	})
+	});
 }
