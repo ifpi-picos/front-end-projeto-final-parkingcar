@@ -38,73 +38,16 @@
 									<div class="m-auto">
 										<div class="form-group">
 											<div class="input-group">
-												<label class="control-label" for="id-placa"
+												<label class="control-label" for="id-placa-pesquisa"
 													>Placa</label
 												>
-												<input type="text" id="id-placa" />
+												<input type="text" id="id-placa-pesquisa"/>
 											</div>
 										</div>
 									</div>
 								</div>
 
 								<div class="mt-1">
-									<p class="style-box-p">Dados do Proprietario</p>
-									<div class="row mt-1"></div>
-									<div>
-										<div class="row space-around">
-											<div class="col">
-												<div class="form-group">
-													<div class="input-group">
-														<label for="id-nome" class="control-label"
-															>Nome</label
-														>
-														<input disabled type="text" id="id-nome" value="Matheus Santana"/>
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="form-group">
-													<div class="input-group">
-														<label for="id-cpf" class="control-label">Cpf</label>
-														<input disabled  type="text" id="id-cpf" value="111.111.111-11" />
-													</div>
-												</div>
-											</div>
-											<div class="col">
-												<div class="form-group">
-													<div class="input-group">
-														<label for="id-telefone" class="control-label"
-															>Telefone</label
-														>
-														<input disabled type="text" id="id-telefone" value="(99)9 9999-9999" />
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row space-around">
-											<div class="col">
-												<div class="form-group">
-													<div class="input-group">
-														<label for="id-endereco" class="control-label">
-															Endereço
-														</label>
-														<input disabled type="text" id="id-endereco" value="Minha casa" />
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row space-around">
-											<div class="col">
-												<div class="form-group">
-													<div class="input-group">
-														<label for="id-descricao" class="control-label"
-															>Observação</label
-														>
-														<textarea disabled type="text" id="id-descricao" >Descrição...................................................................................................................................</textarea>
-													</div>
-												</div>
-											</div>
-										</div>
 										<p class="style-box-p mt-1">Dados do Veiculo</p>
 										<div>
 											<div class="row space-around">
@@ -114,7 +57,7 @@
 															<label for="id-placa" class="control-label"
 																>Placa</label
 															>
-															<input disabled type="text" id="id-placa" value="ABC-1234"/>
+															<input disabled type="text" id="id-placa" />
 														</div>
 													</div>
 												</div>
@@ -122,40 +65,24 @@
 													<div class="form-group">
 														<div class="input-group">
 															<label for="id-cor" class="control-label">Cor</label>
-															<input disabled type="text" id="id-cor" value="Azul" />
+															<input disabled type="text" id="id-cor"  />
 														</div>
 													</div>
 												</div>
-												<div class="col">
-													<div class="form-group">
-														<div class="input-group">
-															<label for="id-tamanho" class="control-label">Tamanho</label>
-															<input disabled type="text" id="id-tamanho" value="Medio" />
-														</div>
-													</div>
-												</div>
+												
 											</div>
 											<div class="row space-around">
 												<div class="col">
 													<div class="form-group">
 														<div class="input-group">
-															<label for="id-marca" class="control-label">
+															<label for="id-modelo" class="control-label">
 																Marca/Modelo
 															</label>
-															<input disabled type="text" id="id-marca" value="Fusca"/>
+															<input disabled type="text" id="id-modelo"/>
 														</div>
 													</div>
 												</div>
-												<div class="col">
-													<div class="form-group">
-														<div class="input-group">
-															<label for="id-marca" class="control-label">
-																Proprietário
-															</label>
-															<input disabled type="text" id="id-marca" value="Comum"/>
-														</div>
-													</div>
-											</div>
+												
 											</div>
 											<div class="row space-around">
 												<div class="col">
@@ -164,7 +91,7 @@
 															<label for="id-descricao" class="control-label"
 																>Descrição</label
 															>
-															<textarea disabled type="text" id="id-descricao">Um fusca Normal</textarea>
+															<textarea disabled type="text" id="id-descricao"></textarea>
 														</div>
 													</div>
 												</div>
@@ -175,21 +102,21 @@
 												<div class="col">
 													<div class="form-group">
 														<div class="input-group">
-															<label for="id-descricao" class="control-label"
+															<label for="id-hora" class="control-label"
 															>Data e Hora</label
 															>
-															<input type="datetime-local" id="id-descricao"></input>
+															<input type="datetime-local" id="id-hora"></input>
 														</div>
 													</div>
 												</div>
 												<div class="col">
 													<div class="form-group">
 														<div class="input-group">
-															<label class="control-label" for="id-tamanho">Entrada/Saida</label>
-															<select class="m-0" name="Tamanho" id="id-tamanho">
+															<label class="control-label" for="id-status">Entrada/Saida</label>
+															<select class="m-0" name="status" id="id-status">
 																<option disabled>Selecione uma Opção</option>
 																<option value="1">Entrada</option>
-																<option value="1">Saida</option>
+																<option value="2">Saida</option>
 															</select>
 														</div>
 													</div>
@@ -198,7 +125,7 @@
 										</div>
 										<div class="row mt-1">
 											<div class="m-auto">
-												<button class="btn btn-primary">Confirmar</button>
+												<button id="btn-confirm" class="btn btn-primary">Confirmar</button>
 											</div>
 										</div>
 									</div>
@@ -210,5 +137,7 @@
 			</main>
 		</div>
 		<script src="/js/main.js"></script>
+		<script src="/js/methods.js"></script>
+		<script src="/js/entradaSaida.js"></script>
 	</body>
 </html>
