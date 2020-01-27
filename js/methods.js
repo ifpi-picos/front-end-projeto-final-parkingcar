@@ -1,5 +1,3 @@
-//import a from './methods.js';
-
 function gerarTabela(headers, body, props) {
 	const tabela = document.createElement('table');
 	const trThead = document.createElement('tr');
@@ -12,12 +10,12 @@ function gerarTabela(headers, body, props) {
 	});
 	thead.append(trThead);
 	tabela.append(thead);
-	
+
 	body.forEach(elementBody => {
 		const tr = document.createElement('tr');
 		props.forEach(elementProps => {
 			const td = document.createElement('td');
-			td.innerText = elementBody[elementProps];
+			td.innerText = elementBody[elementProps] || '';
 			tr.append(td);
 		});
 		tbody.append(tr);
@@ -26,26 +24,22 @@ function gerarTabela(headers, body, props) {
 	return tabela;
 }
 
-const veiculos = gerarTabela(
-	['Placa', 'Modelo', 'Descrição'],
-	[
-		{
-			placa: 'ABC-1234',
-			modelo: 'Carro 1',
-			descricao: 'Descrição...................................................',
-		},
-		{
-			placa: 'DEF-5678',
-			modelo: 'Carro 2',
-			descricao: 'Descrição...................................................',
-		},
-		{
-			placa: 'GHI-9012',
-			modelo: 'Carro 2',
-			descricao: 'Descrição...................................................',
-		},
-	],
-	['placa', 'modelo', 'descricao'],
-	);
-	
-	document.getElementById('table').append(veiculos);
+function getAuth() {
+	return JSON.parse(localStorage.user);
+}
+
+function http(url, {body , method = 'GET'} = {}) {
+	const token = getAuth() ? getAuth().token : '';
+	const urlBase = 'http://localhost:3000/api';
+	let option = {
+		method: method,
+		headers: new Headers({
+			'Content-Type': 'application/json; charset=utf-8',
+			Authorization: token,
+		}),
+	};
+	if (body) {
+		option.body = JSON.stringify(body);
+	}
+	return fetch(urlBase + url, option);
+}

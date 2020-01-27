@@ -15,7 +15,10 @@ document.addEventListener('submit', async event => {
 		password: document.getElementById('login-password').value,
 	};
 	try {
-		const res = await http('/auth/authenticate', auth, 'POST');
+		const res = await http('/auth/authenticate', {
+			body: auth,
+			method: 'POST',
+		});
 		if (res.status === 200) {
 			res.json().then(result => {
 				localStorage.setItem('user', JSON.stringify(result));
