@@ -31,10 +31,10 @@ async function cadastrarUserGestor() {
 					'id-confirm-password',
 				]);
 			} else {
-				alert('Algo de errado');
+				alert('Algo deu errado');
 			}
 		} catch (error) {
-			alert('Algo de errado');
+			alert('Algo deu errado');
 			console.log(error);
 		}
 	}

@@ -56,13 +56,11 @@
 									<div class="col">
 										<div class="form-group">
 											<div class="input-group">
-												<label class="control-label" for="id-tamanho"
-													>Tamanho</label
+												<label class="control-label" for="id-proprietario"
+													>Proprietário</label
 												>
-												<select class="m-0" name="Tamanho" id="id-tamanho">
-													<option value="1">aaa</option>
-													<option value="1">bbb</option>
-													<option value="1">ccc</option>
+												<select class="m-0" name="P" id="id-proprietario">
+													
 												</select>
 											</div>
 										</div>
@@ -79,16 +77,7 @@
 											</div>
 										</div>
 									</div>
-									<div class="col">
-										<div class="form-group">
-											<div class="input-group">
-												<label for="id-marca" class="control-label">
-													Proprietário
-												</label>
-												<input type="text" id="id-marca" />
-											</div>
-										</div>
-									</div>
+									
 								</div>
 								<div class="row space-around">
 									<div class="col">
@@ -105,7 +94,7 @@
 								<div class="column flex flex-end mt-2">
 									<div class="col">
 										<button onclick="location.href = '/pages/funcionario/list/veiculo.html'" class="btn btn-pale">Voltar</button>
-										<button class="btn btn-primary">Salvar</button>
+										<button id="btn-new" class="btn btn-primary">Salvar</button>
 									</div>
 								</div>
 							</div>
@@ -114,5 +103,7 @@
 				</div>
 			</main>
 		</div>
+		<script src="/js/methods.js"></script>
+		<script src="/js/formVeiculo.js"></script>
 	</body>
 </html>
