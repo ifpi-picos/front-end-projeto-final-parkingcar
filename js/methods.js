@@ -43,3 +43,16 @@ function http(url, {body , method = 'GET'} = {}) {
 	}
 	return fetch(urlBase + url, option);
 }
+
+function createObjectWithId(object) {
+	const newObject = {};
+	Object.keys(object).forEach(key => {
+		newObject[key] = document.getElementById(object[key]).value;
+	})
+	return newObject;
+}
+function clearForm(array) {
+	array.forEach(element =>{
+		document.getElementById(element).value = '';
+	})
+}
