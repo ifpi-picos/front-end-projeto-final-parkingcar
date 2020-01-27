@@ -1,7 +1,7 @@
 async function changeEndPoint(user) {
 	if (user.role === 'admin') {
 		location.href = '/pages/admin/dashboard.html';
-	} else if (user.role === 'user') {
+	} else if (user.role === 'gestor') {
 		location.href = '/pages/gestor/dashboard.html';
 	} else {
 		location.href = '/pages/funcionario/form/entrada-saida.html';
