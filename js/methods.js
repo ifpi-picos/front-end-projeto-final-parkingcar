@@ -30,7 +30,7 @@ function getAuth() {
 
 function http(url, { body, method = 'GET' } = {}) {
 	const token = getAuth() ? getAuth().token : '';
-	const urlBase = 'http://localhost:3000/api';
+	const urlBase = 'https://parking-car.herokuapp.com/api';
 	let option = {
 		method: method,
 		headers: new Headers({
